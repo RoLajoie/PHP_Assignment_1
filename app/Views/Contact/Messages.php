@@ -1,8 +1,6 @@
 <?php
-// Include the MessageMod class
 require_once __DIR__ . '/../../Model/MessageMod.php';
 
-// Read messages from the JSON file
 $messages = app\Model\MessageMod::read();
 
 if (!empty($messages)) {
