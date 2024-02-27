@@ -27,24 +27,7 @@
     </tr>
 </table>
 
-<?php
-//This works but it's in the wrong context
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     // Handle form submission
-//     $email = $_POST['email'] ?? ''; // Make sure to handle cases where these values might not be set
-//     $message = $_POST['message'] ?? '';
-//     $IP = $_SERVER['REMOTE_ADDR'];
-
-//     // Save the message to the JSON file
-//     $messageData = json_encode(['email' => $email, 'message' => $message, 'IP' => $IP]);
-//     file_put_contents(__DIR__ . '/../../Resources/messages.json', $messageData . PHP_EOL, FILE_APPEND);
-
-//     // Redirect back to the same page with a success message
-//     header('Location: Contact_us.php?success=1');
-//     exit();
-// }
-?>
-
+<!-- Links to the form MessageController.php -->
 <form action="/app/Controller/MessageController.php" method="post" class="form-inline" >
   <div class="form-group">
     <label>Email:</label>
@@ -61,6 +44,7 @@
 
 <?php
 if (isset($_GET['success']) && $_GET['success'] == 1) {
+    //Creates a div that triggers the happy success message
     echo '<div class="alert alert-success" role="alert">Message submitted successfully!</div>';
 }
 ?>

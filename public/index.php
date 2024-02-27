@@ -24,9 +24,27 @@
     <h1>Landing page</h1>
     <p>Welcome to this Web application</p>
     <p>We aim to please.</p>
+    
+
+
+    <style>
+        .index-img {
+            width: 25%; 
+            height: auto; 
+            display: block; 
+        }
+    </style>
+
+    <p>This is what we do when we say aim</p>
+    <img src="../../../public/images/aim.png" class="index-img">
+    <p>Just a casual day at the office</p>
+    <img src="../../../public/images/office.jpg" class="index-img">
+
+
     </th>
         </ul>
     </tr>
+
 </table>
 
 

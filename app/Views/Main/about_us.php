@@ -31,14 +31,10 @@
         }
     </style>
 
-
     <p>Old homie, doesn't believe in retirement. Frequent trips to HR</p>
-    <img src="../../../Resources/assemblyGuy.jpeg" class="resized-img">
+    <img src="../../../public/images/assemblyGuy.jpeg" class="resized-img">
     <p>Computer head. Creates code with brain. Often thinks inside the box</p>
-    <img src="../../../Resources/outsideBoxguy.jpg" class="resized-img">
-
-
-
+    <img src="../../../public/images/outsideBoxguy.jpg" class="resized-img">
 
     </th>
         </ul>
