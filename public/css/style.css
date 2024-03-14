@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar ul li {
+    float: left;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.message-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.email {
+    font-weight: bold;
+}
+
+.message-content {
+    margin-top: 5px;
+}
+
+.ip {
+    color: #666;
+    font-size: 0.8em;
+}
+
+.no-messages {
+    font-style: italic;
+    color: #888;
+}
