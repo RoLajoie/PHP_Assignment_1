@@ -23,22 +23,20 @@ class App
             'main/index' => 'Main,index',
             '' => 'Main,index',
             'Main/about_us' => 'Main,about_us',
-            'Contact/Contact_Us' => 'Contact,index',
-            'Contact/Messages' => 'Contact,messages',
+            'Contact/index' => 'Contact,index',
+            'Contact/read' => 'Contact,read',
         ];
         
 
         foreach ($routes as $routeUrl => $controllerMethod) {
             
 
-            if ($url == $routeUrl) { //match the route
+            if ($url == $routeUrl) { 
                 
-                //run the route
                 [$controller,$method] = explode(',', $controllerMethod);
                 $controller = '\\app\\controllers\\' .$controller;
                 $controller = new $controller();
                 $controller->$method();
-                //make sure that we don't run a second route
                 break;
             }
         }

@@ -16,8 +16,8 @@
     <ul>
         <li><a href="/Main/index">Landing page</a></li>
         <li><a href="/Main/about_us">About Us</a></li>
-        <li><a href="/Contact/Contact_Us">Contact Us</a></li>
-        <li><a href="/Contact/Messages">See the messages we get</a></li>
+        <li><a href="/Contact/index">Contact Us</a></li>
+        <li><a href="/Contact/read">See the messages we get</a></li>
     </ul>
 </div>
 
@@ -26,7 +26,8 @@
     <p>We aim to please.</p>
     
 
-
+    <!-- Making sure the image isn't massive --> 
+    
     <style>
         .index-img {
             width: 25%; 

@@ -42,7 +42,6 @@ class MessageMod {
             fwrite($file, $message . PHP_EOL);
             flock($file, LOCK_UN);
         } else {
-            // Failed to acquire lock
             fclose($file);
             die('Error locking file.');
         }

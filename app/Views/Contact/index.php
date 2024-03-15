@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <!-- Link to the CSS file using the correct relative path -->
+    <!-- Link to the CSS file -->
     <link href="../public/css/style.css" rel="stylesheet"> 
     <!-- Link to Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -13,14 +13,18 @@
 
 <body>
 
+
+
 <div class="navbar">
     <ul>
         <li><a href="/Main/index">Landing page</a></li>
         <li><a href="/Main/about_us">About Us</a></li>
-        <li><a href="/Contact/Contact_Us">Contact Us</a></li>
-        <li><a href="/Contact/Messages">See the messages we get</a></li>
+        <li><a href="/Contact/index">Contact Us</a></li>
+        <li><a href="/Contact/read">See the messages we get</a></li>
     </ul>
 </div>
+
+<h1>Contact Us</h1>
 
 <!-- Links to the form MessageController.php -->
 <form action="/app/controllers/MessageController.php" method="post" class="form-inline">

@@ -5,11 +5,11 @@ class Contact extends \app\core\Controller {
 
     function index(){
         //echo('contact');
-        $this->view('Contact/Contact_Us');
+        $this->view('Contact/index');
     }
 
-    function Messages(){
+    function read(){
         //echo('message');
-        $this->view('Contact/Messages');
+        $this->view('Contact/read');
     }
 }

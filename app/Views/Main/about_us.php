@@ -15,17 +15,26 @@
     <ul>
         <li><a href="/Main/index">Landing page</a></li>
         <li><a href="/Main/about_us">About Us</a></li>
-        <li><a href="/Contact/Contact_Us">Contact Us</a></li>
-        <li><a href="/Contact/Messages">See the messages we get</a></li>
+        <li><a href="/Contact/index">Contact Us</a></li>
+        <li><a href="/Contact/read">See the messages we get</a></li>
     </ul>
 </div>
+    
+    <style>
+        .index-img {
+            width: 25%; 
+            height: auto; 
+            display: block; 
+        }
+    </style>
 
-    <p>Old homie, doesn't believe in retirement. Frequent trips to HR</p>
-    <img src="../../../public/images/assemblyGuy.jpeg" class="resized-img">
+    <h1>About Us</h1>
+    <p>Old man, doesn't believe in retirement. Frequent trips to HR</p>
+    <img src="../../../public/images/assemblyGuy.jpeg" class="index-img">
     <p>Computer head. Creates code with brain. Often thinks inside the box</p>
-    <img src="../../../public/images/outsideBoxguy.jpg" class="resized-img">
+    <img src="../../../public/images/outsideBoxguy.jpg" class="index-img">
 
-
+    
 
 </body>
 
