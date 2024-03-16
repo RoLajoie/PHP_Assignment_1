@@ -17,16 +17,20 @@ class MessageMod {
         $filePath = __DIR__ . '/../../Resources/messages.json';
         
         if (!file_exists($filePath)) {
-            return []; // Return an empty array if the file doesn't exist
+            return [];
         }
         
+        // ignoring the spaces or lines in event of accidental tampering wth file
         $messages = file($filePath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
         return $messages;
     }
 
     public function write() {
+
+        //directory
         $filePath = __DIR__ . '/../../Resources/messages.json';
         
+        //creating a json object within this variable for easy storage
         $message = json_encode([
             'email' => $this->email,
             'message' => $this->message,
@@ -45,7 +49,7 @@ class MessageMod {
             fclose($file);
             die('Error locking file.');
         }
-        
+        //using fclose to stop the lock 
         fclose($file);
     }
 }

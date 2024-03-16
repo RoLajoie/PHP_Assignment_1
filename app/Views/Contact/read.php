@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation Menu</title>
-    <link href="../public/css/style.css" rel="stylesheet"> 
+    <link href="/public/css/style.css" rel="stylesheet"> 
 </head>
 
 <body>
 
 <div class="navbar">
-    <ul>
-        <li><a href="/Main/index">Landing page</a></li>
-        <li><a href="/Main/about_us">About Us</a></li>
-        <li><a href="/Contact/index">Contact Us</a></li>
-        <li><a href="/Contact/read">See the messages we get</a></li>
-    </ul>
-</div>
+        <ul>
+            <li><a href="/Main/index">Landing page</a></li>
+            <li><a href="/Main/about_us">About Us</a></li>
+            <li><a href="/Contact/index">Contact Us</a></li>
+            <li><a href="/Contact/read">See the messages we get</a></li>
+        </ul>
+    </div>
 
-<h1>Messages</h1>
+    <h1>Messages</h1>
 
-<div class="message-container">
+    <div class="message-container">
     <?php
     
     // creates divs so that each message displays in a container for styling
@@ -48,7 +48,10 @@
         echo '<p class="no-messages">No messages found.</p>';
     }
     ?>
-</div>
+
+    </div>
+    
+    
 
 </body>
 
